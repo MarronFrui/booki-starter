@@ -1,0 +1,346 @@
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+header {
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1024px) {
+    .logo {
+      justify-content: left;
+      padding-left: 3rem;
+    }
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1%;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+
+  .search-container {
+    display: flex;
+    max-height: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    .search-container {
+      display: flex;
+      padding-left: 1rem;
+      justify-content: flex-start;
+    }
+  }
+
+  .search-input {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 1rem;
+    height: 3rem;
+    border: none;
+    border-top: 1px solid rgba(204, 204, 204, 0.3);
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+  }
+
+  .search-button {
+    font-size: 1rem;
+    background-color: #0369d6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    height: 2.8rem;
+    width: 3.2rem;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.637));
+  }
+
+  .icon {
+    padding: 1rem 1rem;
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0 0 15px;
+    height: 3rem;
+    align-items: center;
+  }
+
+  .search-button:hover {
+    background-color: #0056b3;
+    opacity: 0.2;
+  }
+
+  .info {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    .info p {
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
+
+    .info-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: #dddddd 0.1rem solid;
+      height: 1.75rem;
+      width: 1.75rem;
+      border-radius: 2rem;
+    }
+  }
+  .filter-container {
+    display: flex;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 2em 0.5rem 2em 0.5rem;
+    font-weight: bold;
+  }
+
+  .filter {
+    display: flex;
+    margin-left: 1rem;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .filter-button i {
+    font-size: 1rem;
+  }
+
+  .filter-button:hover {
+    background-color: rgba(0, 86, 179, 0.3);
+    transition: background-color 0.5s ease;
+    color: rgb(0, 0, 0);
+  }
+
+  .logo-box {
+    padding-top: 0.3rem;
+    flex-grow: 1;
+  }
+}
+header img {
+  width: 4.5rem;
+}
+
+@media (min-width: 1024px) {
+  .order {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 1440px) {
+  .order {
+    flex-direction: row-reverse;
+  }
+}
+
+nav {
+  display: flex;
+  .button {
+    border: none;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    flex-basis: 100%;
+    border-bottom: rgba(128, 128, 128, 0.425) 1px solid;
+    background-color: white;
+  }
+  .button:hover {
+    color: blue;
+    border-bottom-color: blue;
+    border-top-color: blue;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .logo {
+      flex: 66%;
+    }
+    .button {
+      flex: 33%;
+      align-self: flex-start;
+      padding-top: 1rem;
+      padding-bottom: 0;
+      border-bottom: none;
+      border-top: rgba(128, 128, 128, 0.425) 2px solid;
+    }
+  }
+  .nav-buttons {
+    justify-content: center;
+    gap: 4rem;
+    padding-right: 2rem;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+body {
+  section {
+    @media (max-width: 1024px) {
+      .backgroundrm {
+        background-color: white;
+      }
+    }
+    @media (min-width: 1024px) {
+      .wrap {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .spacebetween {
+        gap: 10px;
+        margin: 20px;
+      }
+      .filter-container{
+        display: block;
+      }
+    }
+  }
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .margin-left {
+    margin-left: 1rem;
+  }
+  .padding-top {
+    padding-top: 1rem;
+  }
+
+  .padding {
+    padding: 0.5rem;
+  }
+}
+
+section {
+  .section-header {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    border: #0065fc;
+    justify-content: space-between;
+  }
+
+  .content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    section {
+      margin: 1rem;
+      border-radius: 20px;
+      min-width: 18rem;
+    }
+    .content {
+      flex-direction: row;
+    }
+    .spacebetween {
+      flex-direction: row;
+      margin: 0;
+    }
+
+    .spacebetween img {
+      flex: 1;
+    }
+  }
+
+  &.grey {
+    background-color: var(--main-bg-color);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: var(--main-bg-color);
+  a {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  .footer-section {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .footer-content {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
