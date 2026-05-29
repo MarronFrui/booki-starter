@@ -20,7 +20,6 @@ header {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    flex-grow: 1;
   }
 
   @media (min-width: 1024px) {
