@@ -187,6 +187,7 @@ nav {
   .button {
     border: none;
     font-size: 1rem;
+    text-align: center;
     padding-bottom: 1rem;
     flex-basis: 100%;
     border-bottom: rgba(128, 128, 128, 0.425) 1px solid;
@@ -205,10 +206,10 @@ nav {
     flex-direction: row;
     justify-content: center;
     .logo {
-      flex: 66%;
+      flex: 0 0 66%;
     }
     .button {
-      flex: 33%;
+      flex: 0 0 33%;
       align-self: flex-start;
       padding-top: 1rem;
       padding-bottom: 0;
