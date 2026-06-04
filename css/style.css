@@ -340,7 +340,13 @@ section {
   &.grey {
     background-color: var(--main-bg-color);
     margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.3rem;
+  }
+
+  @media (max-width: 1440px) {
+    &.width30 {
+      padding-bottom: 2rem;
+    }
   }
 }
 
