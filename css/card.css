@@ -112,10 +112,12 @@
 
 .horizontal img {
   margin: 0;
+  object-fit: cover;
 }
 
 .vertical img {
   width: 30%;
+  object-fit: cover;
 }
 
 .fullscreen {
